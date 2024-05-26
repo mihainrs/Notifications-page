@@ -1,0 +1,193 @@
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+}
+
+/*   
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+  */
+
+*{
+    font-size:15px;
+}
+
+body {
+    margin: 2em 40em 4em 40em;
+    background-color: var(--Verylightgrayishblue);
+}
+
+/* anchor deco and list style */
+
+a {
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+a:link{
+    color:var(--Blue);
+}
+
+a:visited{
+    color:var(--Darkgrayishblue);
+}
+
+li {
+    list-style: none;
+}
+
+/* fitting images */
+
+img {
+    object-fit: scale-down;
+    width: 50px;
+}
+
+/* fonts */
+
+.name{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color:var(--Verydarkblue);
+}
+
+.name:visited{
+    color:var(--Blue);
+}
+
+p{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:var(--Grayishblue);
+}
+
+h1{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* the big box */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1%;
+}
+
+/* the upper part */
+.top-container {
+    display: flex;
+    gap: 23.3em;
+    margin: 2em 0;
+}
+
+.notif {
+    font-size: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.number {
+    background-color: var(--Blue);
+    padding: 1px 10px 2px 10px;
+    border-radius: 15%;
+    color:var(--White);
+}
+
+.mark-as-read {
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size:15px;
+}
+
+.mark-as-read:visited{
+    color:var(--Blue);
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 2em;
+}
+
+.notif-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    border-radius: 5px;
+    padding-left: 1em;
+}
+
+.notif-inside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+
+}
+
+.notif-inside>p {
+    margin-top: -1em;
+}
+
+.pm {
+    border: 1px solid var(--Lightgrayishblue2);
+    padding: 1em 0 1em 0.5em;
+    margin-right:5em;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.pm:hover{
+    background-color:var(--Grayishblue);
+}
+
+/* adjusting Rizky's pfp, given the usage of my list instead of a normal paragraph for the message, which I probably should've done instead */
+
+.rizky {
+    display: flex;
+    margin-bottom: 6em;
+}
+
+.new-pic {
+    margin-left: 14em;
+    padding:2px;
+    border-radius: 10px;
+}
+
+.new-pic:hover{
+    background-color: var(--Darkgrayishblue);
+}
+
+.notif-line:last-child {
+    margin-bottom: 2em;
+}
